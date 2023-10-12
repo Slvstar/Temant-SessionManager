@@ -1,0 +1,17 @@
+{
+    "name": "temant/session-manager",
+    "description": "A PHP session library for managing sessions.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Emad Almahdi",
+            "email": "emad.storm@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Temant\\SessionManager\\": "Src/"
+        }
+    }
+}
