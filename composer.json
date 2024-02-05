@@ -1,17 +1,32 @@
 {
     "name": "temant/session-manager",
-    "description": "A PHP session library for managing sessions.",
+    "version": "2.0.0",
+    "description": "A comprehensive PHP utility class for secure and efficient managing sessions.",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Emad Almahdi",
-            "email": "emad.storm@gmail.com"
+            "email": "emad@almahdi.se"
         }
     ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10"
+    },
     "autoload": {
         "psr-4": {
             "Temant\\SessionManager\\": "Src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Temant\\SessionManager\\Tests\\": "Tests/"
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse"
     }
 }

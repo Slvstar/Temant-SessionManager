@@ -1,7 +1,9 @@
 <?php declare(strict_types=1);
 
 namespace Temant\SessionManager\Exceptions {
-    class SessionNotStartedException extends \RuntimeException
+    use Exception;
+
+    class SessionNotStartedException extends Exception
     {
         /**
          * Constructor for SessionNotStartedException.
