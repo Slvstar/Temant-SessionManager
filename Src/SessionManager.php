@@ -114,7 +114,11 @@ namespace Temant\SessionManager {
          */
         public function destroy(): bool
         {
-            return $this->isActive() ? session_destroy() : throw new SessionNotStartedException;
+            if ($this->isActive()) {
+                session_unset();
+                return session_destroy();
+            }
+            throw new SessionNotStartedException;
         }
     }
 }
